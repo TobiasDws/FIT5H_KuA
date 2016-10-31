@@ -1,0 +1,8 @@
+Ruby verwendet für Definitionen, widerholungen abfragen ein block konstruckt
+
+Bsp:
+	3.times do
+		puts "irgendwas"
+	end
+	Bei der Wiederholung begint der block mit einen do und endet mit einem end.
+	

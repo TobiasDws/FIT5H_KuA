@@ -1,0 +1,4 @@
+drei Grundprinzipien von Linux:
+	- alles ist eine Datei
+	- Vermeiden von Redundanz "sag nur was wenn du was zu sagen hast": das ergebnis eines befehls wird nur im fall eines fehlers oder wenn das ergebnis explizit angefordert wird ausgegeben.
+	- kleine spezialisierte Programme: ein programm erledigt nur eine aufgbe, aber die perfekt!!!

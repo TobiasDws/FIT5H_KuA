@@ -1,0 +1,69 @@
+OOP
+
+Klassen
+	Klassen bilden den plan von konkreten objekten 
+	Def:
+		class Player
+		
+		end
+		Eine Klasse wird durch die verwendung des schlüsselwortes class definiert.
+		die definition ist immer i einen block eingeschlossen.
+
+Objekt:
+	wenn ich mit einer Klasse Arbeiten will, dann erzeuge ich ein objekt,das in einer variable gespeichert wird.
+		obj = Player.new
+	ein neues objekt wird in einer Variablen mit beliebiger bezeichnung gespeihert.
+	Es wird mit dem Namen der Klasse un dem Aufruf der Methode new erzeugt.
+Das objekt hat alle Eigenschaften (Attribute) und Fähigkeiten (Methoden), die in der klasse definiert sind .
+
+Konstruktor
+	beim erzeugen einen neuen Objektes mit Player.new wird automatisch eine Methode 'initalize' aufgerufen Diese Methode gibt es in jeder Ruby-Klasse Es ist ülich diese existierende Methode mit einer eigenen Methode zu überschreiben um dort die Basiswerte des Objekts festzulegen.
+	Bsp.:
+
+instanzvariablen
+	in der OOP hat ein objekt bestimmte eigenschaften , die es charaktariesieren 
+
+	in Ruby werden diese Eigenschaften als Instanzvariablen definiert und ein '@' wird dem Namen vorangestellt.
+
+bsp.: @name
+
+Das besondere einer Instansvariablen oder eigenschaft ist, dass sie in der ganzen Klasse gilt und verwendet werden kann.
+Wichtig: variablen die innerhalb von einem Block definiert werden und kein @ vorangestellt haben sind sogennanten
+
+Eine Instanzvariable wird zu einer eigenschaft , indem es in der klasse methoden gibt die den zugrif von ausserhalb ermöglichen
+eine eigenschaft hat einen sogenanten setter der es ermöglicht einen wert zu setzten und einen getter der einen wert zurückgibt 
+
+getter 
+	def name
+ 		@name
+	end
+
+	die methode heist genauso wie die instanzvariable ohne das @ sie hat die aufgabe den wert der instanzvariable name zurück zu geben die methode wird von aussen erwendet 
+aufruf :
+
+	puts obj.name
+
+gibt den namen des players aus
+Kurzform an stelle einer Methodendefinition kann ich eine kurzform verwenden 
+attr_reader :name
+
+Setter
+	def name=(name)
+		@name=name
+	end
+
+der setter zum speichern eines wertes in einer instnzvariablen heißt wie die instnzvariable mit einen = im namen.
+
+aufruf:
+	obj.name = "Supergirl"
+
+	Kurzvorm
+		attr_writer :name
+
+kurzform für setter und getter 
+	attr_accessor :name
+
+virtuelles attribut
+
+	ein virtuelles atribut ist eine methode die so aussieht, bzw. genutzt werden kann wie eine eigenschaft, die aller dings keine eigene instnazvariable ist obwohl sie von aussen so aussieht
+

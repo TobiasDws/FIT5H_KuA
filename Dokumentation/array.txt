@@ -1,0 +1,31 @@
+Definition 
+	Arrys sind geordnete Listen, die Verweise für andere Objekte enthalten.
+
+
+
+
+Neues Arry Anlegen
+	seats = []
+	seats = Arry.new
+
+	seats = ["wert1", "wert2"]
+	seats = %w(wert1 wert2)
+
+werte Hinzufügen
+	seats <<"Wert3"
+	seats[3] = "wert4"
+	seats.push("wert5")
+
+Methoden von Arrays
+	Array groesse:
+		seats.size
+
+	Letztes Element Entferenen
+		seats.pop
+
+	array leer?
+		seats.empty?
+
+	löschen von element
+		seats.delete_at(3)
+		

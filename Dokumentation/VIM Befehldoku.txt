@@ -1,0 +1,40 @@
+*****Befehle zum Moduswechsel
+
+i 			Einfügen vor der Curserposition
+a			Einfügen nach der Aktuellen curserposition
+I 			Einfügen am Anfang der aktuellen Zeile
+A 			Einfügen am Ende der Zeile
+
+
+*****Befehle zum Löschen / erstezen von Text
+	
+C 			Ersetzt die aktuelle Zeile durch den neu eingegebenen Text
+c 			in verbindung mit bewegung operator ersetzt text 
+ce 			löscht das nächste wort und fügt ein
+
+x			löscht das Zeichen der Curserposition
+dd 			löscht eine zeile und kopiert ind den Cache
+
+v 			makiermodus starten und mit Pfeiltasten vornehmen
+y 			kopiert den makierten Bereich
+p 			fügt text aus Zwischenablage nach (unter) der aktuellen Zeile ein
+
+
+*****Befehle im Kommandomodus
+
+ESC	 		Wechselt vom Einfüge in den Befehlsmodus
+
+/ 			die eingegebenen Zeichen werden im Text gesucht
+n 			sucht weiter
+N 			sucht rückwerts
+
+w 			springt ein Wort weiter
+gg 			geht zum Dateianfang
+GG 			geht zum Dateiende
+
+:w 			speichert die Datei
+:w <dateiname> speichert Text in neuer Datei
+:q 			beenden falls keine änderungen vorgenommen wurden
+:wq			Speichert und beendet
+:q!			erwirft alle änderungen und beendet
+
