@@ -1,0 +1,56 @@
+Vererbung:
+	Die OOP basiert auf dem prinzip der Überschaubarkeit. deshalb wurde die vererbung als grundlegendes merkmal eingeführt.
+	Erbt eine Klasse von einer anderen Klasse,
+		z.B.	class Lkw < Car
+	dann stehen in der erbenden Klasse alle methoden und eigenschaften zur verfügung die in der Elternklasse definiert wurden.
+
+
+Beispiel:
+
+	class Car
+		attr_accessor :ps
+	end
+	class Lkw < Car
+
+	end
+
+	obj = Lkw.new
+	obj.ps = 50
+	puts obj.ps
+
+
+Zugriffsmodifizierer:
+	Eskommt vor, dass bestimmte Methoden in der elternklasse nur innerhalb dieser Klasse benutzt werden soll. Dann werden diese als private gekenzeichnet
+	Falls eine Methode in der Elternklasse nicht öffentlich sein soll, aber vererbt werden soll, dann wird diese als 'protectet'
+	gekenzeichnet
+	Falls kein Zugriffsmodifierer angegeben ist, gelten die difinierten Methoden als 'public'
+
+	class Car
+		#von aussen erreichbar: public
+		attr_accessor :ps
+		def beschleunigen
+			...
+		end
+
+		#von Kinderklassen erreichbar: protected
+		protected
+			def umwandeln_in_kmh(var)
+				...
+			end
+
+		#nur innerhalb der Elternklasse aufrufbar: private
+		private
+			def irgendwas
+				...
+			end
+	end
+
+Ternärer Operator:
+	Es gibt die möglich keit einen if-else-Block in einer zeile auszuführen:
+	
+		puts car.typ.empty? ? "Kein Wert" : car.typ
+
+	die anweisung puts, also erzeuge eine ausgabe , bekommt denn wert Kein wert fals die bedingung 'cae.typ.empty' leer ist; bzw. den aktuellen Objekt-Wer für 'typ' falls dieser gefüllt ist.
+
+	Das frage zeichen ist ein operator der die linksstehende Bedingung von den auszuführenden anweisungen trennt
+	Der doppenpunkt fungiert als kurzform vom 'else'
